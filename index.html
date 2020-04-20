@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Projeto piu</title>
+		<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="interface">
+			<header id="cabecalho">
+				<hgroup>
+					<h1>Hortifruti</h1>
+					<h2>Aqui entra um slogan</h2>
+				</hgroup>
+
+				<nav id="menu">
+					<h1> Menu Principal</h1>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li> <a href="#"> Ofertas</a></li>
+						<li> <a href="#"> Fale Conosco</a></li>
+						<li> <a href="login.html"> Cadastro</a></li>
+					</ul>
+				</nav>
+
+				<div id="divBusca">
+					<!--<img src="_imagens/search3.png" alt="Buscar..."/>-->
+					<input type="text" id="txtBusca" placeholder="Buscar..."/>
+					<button id="btnBusca"><a href="#">Buscar</a></button>
+				</div>
+			</header>
+		
+			
+			<form method="post" id="login" action="#">
+				<fieldset id="tUsuario">
+					<!--<legend>Login</legend>-->
+					<label for="email" id="emaillabel">E-MAIL:</label>
+					<input type="email" id="email"/>
+					
+					<label for="senha" id="senhalabel"> SENHA: </label>
+					<input type="password" id="senha"/>
+					
+					<button name="button" type="submit">Login</button>		
+				</fieldset>			
+			</form>
+			
+			<div class="row">
+				<div class="coluna">
+					<a href="#openModal" class="linkFruta"><img src="_imagens/percego1.png" alt="descrição da imagem" style="width:100%"></a>
+					<span class="descricao">Percego <br>R$ 7,00 kg</span>
+				</div>
+				<div class="coluna">
+					<a href="#openModal1" class="linkFruta"><img src="_imagens/laranja1.png" alt="descrição da imagem" style="width:100%"></a>
+					<span class="descricao">Laranja <br>R$ 2,49 kg</span>
+				</div>
+				<div class="coluna">
+					<a href="#openModal2" class="linkFruta"><img src="_imagens/morango.png" alt="descrição da imagem" style="width:100%"></a>
+					<span class="descricao">Morango <br>R$ 8,99 kg</span>
+				</div>
+				<div class="coluna">
+					<a href="#openModal3" class="linkFruta"><img src="_imagens/percego1.png" alt="descrição da imagem" style="width:100%"></a>
+					<span class="descricao">Percego <br>R$ 7,00 kg</span>
+				</div>
+				<div class="coluna">
+					<a href="#openModal4" class="linkFruta"><img src="_imagens/laranja1.png" alt="descrição da imagem" style="width:100%"></a>
+					<span class="descricao">Laranja <br>R$ 2,49 kg</span>
+				</div>
+				<div class="coluna">
+					<a href="#openModal5" class="linkFruta"><img src="_imagens/morango.png" alt="descrição da imagem" style="width:100%"></a>
+					<span class="descricao">Percego2 <br>R$ 8,99 kg</span>
+				</div>
+			</div>
+			<!--MENU POP UP
+				AQUI IRA APARECER OS DETALHES DO PRODUTO-->
+			<div id="openModal" class="modalDialog">
+				<DIV>
+					<a href="#close" title="Close" class="close">X</a>
+					<img src="_imagens/percego1.png" alt="descrição da imagem" style="width:50%">
+					<span class="descricao"><br>Percego <br> R$ 7,00 kg</span>
+					<br>
+					<!--Comando em JS ajax para calcular o preco e informar na tela-->
+					<script type="text/javascript">
+						//Funcao para chamar o input com o id="soma"
+						$(document).ready(function(){
+						  $("#somar1").click(function(){
+						  	//Funcao para receber o input resultado Class="input"
+						    var total1 = 0;
+						    $('.input1').each(function(){
+						      var valor = Number($(this).val());
+						      //Verificando se o total e maior ou igual ao valor
+						      if (!isNaN(valor)){
+						      	total1 += valor;
+						      } 
+						    });
+						    //Recebendo o resultado
+						    total1 = total1 / 7;
+						    //Mandando o resultado para a class="resultado"
+						    $(".resultado1").html(total1.toFixed(2));
+						  });
+						});
+					</script>
+					<form>
+						<strong>Preco: </strong>
+						<input type="number" value="0" class="input1" min="0"/>
+						<input type="button" value="Resultado" id="somar1" />
+						<br><br>
+						R$ <span class="resultado1">0.00</span>
+						<br><br>
+						<input type="button" name="comprar" value="Comprar">
+						<input type="reset" name="reset" value="Limpar">
+					</form>	
+				</DIV>
+			</div>
+
+			<div id="openModal1" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<img src="_imagens/laranja1.png" alt="descrição da imagem" style="width:50%">
+					<span class="descricao">Laranja <br>R$ 2,49 kg</span>
+					<br>
+					<!--Comando em JS ajax para calcular o preco e informar na tela-->
+					<script type="text/javascript">
+						//Funcao para chamar o input com o id="soma"
+						$(document).ready(function(){
+						  $("#somar2").click(function(){
+						  	//Funcao para receber o input resultado Class="input"
+						    var total2 = 0;
+						    $('.input2').each(function(){
+						      var valor = Number($(this).val());
+						      //Verificando se o total e maior ou igual ao valor
+						      if (!isNaN(valor)){
+						      	total2 += valor;
+						      } 
+						    });
+						    //Recebendo o resultado
+						    total2 = total2 / 2.49;
+						    //Mandando o resultado para a class="resultado"
+						    $(".resultado2").html(total2.toFixed(2));
+						  });
+						});
+					</script>
+					<form>
+						<form>
+							strong>Preco: </strong>
+							<input type="number" value="0" class="input2" min="0"/>
+							<input type="button" value="Resultado" id="somar2" />
+							<br /><br />
+							
+							R$ <span class="resultado2">0.00</span>
+							<br><br>
+							<input type="button" name="comprar" value="Comprar">
+							<input type="reset" value="Limpar">
+						</form>
+					</form>
+				</div>
+			</div>
+
+			<div id="openModal2" class="modalDialog">
+				<DIV>
+					<a href="#close" title="Close" class="close" onClick="Limpar()">X</a>
+					<img src="_imagens/morango.png" alt="descrição da imagem" style="width:50%">
+					<span class="descricao">Morango <br>R$ 8,99 kg</span>
+					<br>
+					<!--Comando em JS ajax para calcular o preco e informar na tela-->
+					<script type="text/javascript">
+						//Funcao para chamar o input com o id="soma"
+						$(document).ready(function(){
+						  $("#somar3").click(function(){
+						  	//Funcao para receber o input resultado Class="input"
+						    var total3 = 0;
+						    $('.input3').each(function(){
+						      var valor = Number($(this).val());
+						      //Verificando se o total e maior ou igual ao valor
+						      if (!isNaN(valor)){
+						      	total3 += valor;
+						      } 
+						    });
+						    //Recebendo o resultado
+						    total3 = total3 / 9;
+						    //Mandando o resultado para a class="resultado"
+						    $(".resultado3").html(total3.toFixed(2));
+						  });
+						});
+					</script>
+					<form>
+						<strong>Preco: </strong>
+						<input type="number" value="0" class="input3" min="0" />
+						<input type="button" value="Resultado" id="somar3" />
+						<br /><br />
+						R$ <span class="resultado3">0.00</span>
+						<br><br>
+						<input type="button" name="comprar" value="Comprar">
+						<input type="reset" name="reset" value="Limpar">
+					</form>
+				</DIV>
+			</div>
+
+			<div id="openModal3" class="modalDialog">
+				<DIV>
+					<a href="#close" title="Close" class="close">X</a>
+					<h3>Preencher</h3>
+				</DIV>
+			</div>
+
+			<div id="openModal4" class="modalDialog">
+				<DIV>
+					<a href="#close" title="Close" class="close">X</a>
+					<h3>Preencher</h3>
+				</DIV>
+			</div>
+
+			<div id="openModal5" class="modalDialog">
+				<DIV>
+					<a href="#close" title="Close" class="close">X</a>
+					<h3>Preencher</h3>
+				</DIV>
+			</div>
+			
+			<footer id="rodape">
+				<p>Hortifruti Ltda. / CNPJ: 00.000.000/0000-00 / SHIGS 713 BL K - Asa Sul - Brasília, DF</p>
+			</footer>
+		</div>
+	</body>
+
+</html>
