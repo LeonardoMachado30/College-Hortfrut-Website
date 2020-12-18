@@ -19,10 +19,9 @@ Descriçaõ: aqui o usuario tem informações de preços, imagens, e um sistema 
 
 ![alt text](https://github.com/LeonardoMachado30/PIU_HORTIFRUT/blob/master/IMG/1.png)
 <br>
-![alt text](https://github.com/LeonardoMachado30/Pizzaria/blob/master/IMG/2.png)
+![alt text](https://github.com/LeonardoMachado30/PIU_HORTIFRUT/blob/master/IMG/2.png)
 <br>
 <b>IMAGEM 3 - PAINEL PRINCIPAL</b><br>
-Descrição: Esse painel tem os menus para realizar todos 
-os tipos de operações citadas acima (inclusão, exclusão e impressão).<br>
+Descrição: Esse painel e o cadastro do usuario, sem muitas validações.<br>
 
-![alt text](https://github.com/LeonardoMachado30/Pizzaria/blob/master/IMG/3.png)
+![alt text](https://github.com/LeonardoMachado30/PIU_HORTIFRUT/blob/master/IMG/3.png)
