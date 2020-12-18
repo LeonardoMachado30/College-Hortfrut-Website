@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Projeto piu</title>
+		<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="_css/formulario.css">
+	</head>
+	<body>
+		<div id="interface">
+			<header id="cabecalho">
+				<hgroup>
+					<h1>Hortifruti</h1>
+					<h2>Aqui entra um slogan</h2>
+				</hgroup>
+			
+			<nav id="menu">
+				<h1> Menu Principal</h1>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li> <a href="#"> Ofertas</a></li>
+					<li> <a href="#"> Fale Conosco</a></li>
+					<li> <a href="#"> Cadastro</a></li>
+				</ul>
+			</nav>
+			</header>
+			<form method="post" id="fContato" action="#" oninput="calc_total();">
+				<fieldset id="usuario">
+					<legend>Identificação do Usuário</legend>
+						<p><label for="cNome">Nome:</label> 
+						<input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p>
+						<p><label for="cSenha">Senha:</label> 
+						<input type="password" name="tSenha" id="cSenha" size="20" maxlength="30" placeholder="Senha"></p>
+						<p><label for="cEmail">E-mail:</label> 
+						<input type="email" name="tEmail" id="cEmail" size="20" maxlength="30" placeholder="E-mail"></p>
+						
+						<fieldset id="sexo">
+							<legend>Sexo</legend>
+								<input type="radio" name="tSexo" id="cMas" checked><label for="cMas">Masculino</label><br>
+								<input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label>
+						</fieldset>
+						<p><label for="cData">Data de Nascimento:</label>
+						<input type="date" name="tData" id="tData"></p>
+				</fieldset>
+
+				<fieldset id="endereco">
+					<legend>Endereço do Usuário</legend>
+						<p><label for="">Logradouro:</label>
+						<input type="text" name="cRua" id="tRua" size="20" maxlength="30" placeholder="Rua, Avenida, Bairro..."></p>
+						<p><label for="tNum">Número:</label>
+						<input type="number" name="cNum" id="tNum" min="0" max="9999" value="0"></p>
+						<p><label for="tEst">Estado:</label>
+						<select name="cEst" id="tEst">
+							<option value="AC">Acre</option>
+							<option value="AL">Alagoas</option>
+							<option value="AP">Amapá</option>
+							<option value="AM">Amazonas</option>
+							<option value="BA">Bahia</option>
+							<option value="CE">Ceará</option>
+							<option value="DF">Distrito Federal</option>
+							<option value="ES">Espírito Santo</option>
+							<option value="GO">Goiás</option>
+							<option value="MA">Maranhão</option>
+							<option value="MT">Mato Grosso</option>
+							<option value="MS">Mato Grosso do Sul</option>
+							<option value="MG">Minas Gerais</option>
+							<option value="PA">Pará</option>
+							<option value="PB">Paraíba</option>
+							<option value="PR">Paraná</option>
+							<option value="PE">Pernambuco</option>
+							<option value="PI">Piauí</option>
+							<option value="RJ">Rio de Janeiro</option>
+							<option value="RN">Rio Grande do Norte</option>
+							<option value="RS">Rio Grande do Sul</option>
+							<option value="RO">Rondônia</option>
+							<option value="RR">Roraima</option>
+							<option value="SC">Santa Catarina</option>
+							<option value="SP">São Paulo</option>
+							<option value="SE">Sergipe</option>
+							<option value="TO">Tocantins</option>
+						</select></p>
+						<p><label for="tCid">Cidade:</label>
+						<input type="text" name="cCid" id="tCid" size="20" maxlength="30" placeholder="Cidade"></p>
+				</fieldset>
+				<fieldset id="botao">
+					<button name="button" type="submit" id="btnCadastro" onclick="logar()">Cadastrar</button>
+					<script language='javascript' type='text/javascript'>
+						function logar(){//adicionado recentemente
+							alert('Cadastro realizado com sucesso!');
+			       			window.location.href='index.html';
+			       			exit();
+						}
+			        </script>
+				</fieldset>
+		
+			<footer id="rodape">
+				<p>Hortifruti Ltda. / CNPJ: 00.000.000/0000-00 / SHIGS 713 BL K - Asa Sul - Brasília, DF</p>
+			</footer>
+		</div>
+	</body>
+
+</html>
