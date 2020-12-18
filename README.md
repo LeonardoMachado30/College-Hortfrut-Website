@@ -3,12 +3,10 @@
 Apresentação das imagens a seguir e referente ao programa PIU_HORTIFRUT
 <br>
 <h3>PORTUGUÊS</h3>
-Esse projeto foi proposto no segundo semestre da faculdade, para que fosse criado uma aplicação WEB simples de Hortifrut, compra e venda de frutas online.
-Foram elaborados 2 telas, uma 'index.html' e uma 'cadastrar.html', com imagens, preços e com foco nos pop-ups com poucas validações.
+Atividade da faculdade de Projeto Interface com Usuario (PIU), fazer uma tela no estilo Hortifrut onde o cliente consiga comprar frutas, legumes, vegetais e variedades sem precisar sair de casa, o sistema tera que ser simples usando HTML/CSS/javascript puro sem nem um Framework.
 <br>
 <h3>ENGLISH</h3>
-This project was proposed in the second semester of college, to create a simple WEB application for Hortifrut, buying and selling fruits online.
-Two screens were created, one 'index.html' and one 'cadastrar.html', with images, prices and focusing on pop-ups with validation readings.
+Activity of the Faculty of User Interface Design (PIU), make a Hortifrut-style screen where the customer can buy fruits, vegetables, vegetables and varieties without leaving home, the system will have to be simple using pure HTML / CSS / javascript without nor a Framework.
 <br>
 <h4>OBSERVAÇÃO: essee projeito e um sistema simples, nada complexo, sem muita formatação, e somente para demonstrar o conhecimento em html,css e javascript</h4>
 <br>
