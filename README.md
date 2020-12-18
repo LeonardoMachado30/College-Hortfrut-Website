@@ -21,7 +21,7 @@ Descriçaõ: aqui o usuario tem informações de preços, imagens, e um sistema 
 <br>
 ![alt text](https://github.com/LeonardoMachado30/PIU_HORTIFRUT/blob/master/IMG/2.png)
 <br>
-<b>IMAGEM 2 - PAINEL PRINCIPAL</b><br>
+<b>IMAGEM 2 - TELA CADASTRAR</b><br>
 Descrição: Esse painel e o cadastro do usuario, sem muitas validações.<br>
 
 ![alt text](https://github.com/LeonardoMachado30/PIU_HORTIFRUT/blob/master/IMG/3.png)
